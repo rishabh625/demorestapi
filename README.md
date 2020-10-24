@@ -6,7 +6,7 @@ Have used go mod as dependency manager
 
 # Usage
     1. Clone this repo in your GOPATH 
-    2. Run make help to perform suitable operation 
+    2. Run make help to perform desired operation like run unit test , make build or make docker image or run docker compose 
     3. Run Either by Binary or Docker   
 
 # Deployment
@@ -23,6 +23,8 @@ Have used go mod as dependency manager
     Proper Error handling and returning relevant error codes
     
     JWT to be used for Token
+    
+    Adding More Search Options like support for wildcards
     
 # Scalabilty
     We can scale API in following ways
