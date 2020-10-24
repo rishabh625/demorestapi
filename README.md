@@ -26,6 +26,8 @@ Have used go mod as dependency manager
     
     Adding More Search Options like support for wildcards
     
+    Admin Secret Needs To be moved to config or in db 
+    
 # Scalabilty
     We can scale API in following ways
 ### Using any Cloud Service Providers
