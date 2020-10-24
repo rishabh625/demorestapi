@@ -1,0 +1,17 @@
+CREATE TABLE imdb_users (
+  id SERIAL PRIMARY KEY,
+  admin BOOLEAN NOT NULL,
+  deleted BOOLEAN NOT NULL,
+  username VARCHAR(255) UNIQUE,
+  password VARCHAR(255),
+  email VARCHAR (50) UNIQUE
+);
+
+CREATE TABLE movies (
+	id serial PRIMARY KEY,
+	data jsonb UNIQUE,
+  added_by VARCHAR(255) NOT NULL,
+  updated_by VARCHAR(255), 
+	created_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
