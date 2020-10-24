@@ -6,7 +6,10 @@ Have used go mod as dependency manager
 
 # Usage
     1. Clone this repo in your GOPATH <br/>
-    2. Run ``` make help ``` to perform suitable operation <br/>
+    2. Run ``` 
+    make help 
+    ``` 
+    to perform suitable operation <br/>
     3. Run Either by Binary or Docker <br/>
 
 # Improvements To be Done
