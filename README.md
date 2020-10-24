@@ -33,15 +33,15 @@ We can scale API in following ways
 4. Horizontal Pod AutoScaling
 
 # Problems
-1. We might get different Latency for request from different region
-Soln : Distribute instance group among different geo-locations region or put it behind Geo-Location Based LB.
-2. When we implement Caching in memory we might overshoot memory or not properly manage it there can be more and more GC pauses 
-Soln :- Either to use Cache's like Redis, or create own Cache as a service where GC is considered in development.
-3. Searching can be Time Consuming
-Soln:- If our application becomes Search intensive ,we should use combination of cache and powerfull search Engine like Elastic Search
-4. Data Transfer Issues
-Soln:- Since Pagination, Filtering is not implemented we will face issues as data increases by 5x, Implementing This feature will help us command over data transfer.
-However ther can be issues of network which get chokes based on data,Solution to this can be implementing compression for data transfer or using alternative to json over HTTP kile protobuff over gRPC which have built in compression feature and multi request over single connection 
-5. Code Maintainability
-Soln: Create generalized object schema for Update,Create,Delete, currently that is not implemented
+1. We might get different Latency for request from different region <br/>
+Soln : Distribute instance group among different geo-locations region or put it behind Geo-Location Based LB.<br/>
+2. When we implement Caching in memory we might overshoot memory or not properly manage it there can be more and more GC pauses <br/>
+Soln :- Either to use Cache's like Redis, or create own Cache as a service where GC is considered in development. <br/>
+3. Searching can be Time Consuming <br/>
+Soln:- If our application becomes Search intensive ,we should use combination of cache and powerfull search Engine like Elastic Search <br/>
+4. Data Transfer Issues <br/>
+Soln:- Since Pagination, Filtering is not implemented we will face issues as data increases by 5x, Implementing This feature will help us command over data transfer.<br/>
+However ther can be issues of network which get chokes based on data,Solution to this can be implementing compression for data transfer or using alternative to json over HTTP kile protobuff over gRPC which have built in compression feature and multi request over single connection <br/>
+5. Code Maintainability<br/>
+Soln: Create generalized object schema for Update,Create,Delete, currently that is not implemented <br/>
 
