@@ -7,8 +7,11 @@ Have used go mod as dependency manager
 # Usage
     1. Clone this repo in your GOPATH 
     2. Run make help to perform suitable operation 
-    3. Run Either by Binary or Docker 
+    3. Run Either by Binary or Docker   
 
+# Deployment
+    make run-docker
+    
 # Improvements To be Done
     For Current Implementation Each Search Request Query Goes to DB have to make LRU Cache and save all queries Result, This Will Reduce Load on Database  
     Or We can Create Cache Service(MicroService) or USe some external cache's or look for Search Engine such as Elastic Search
@@ -18,6 +21,8 @@ Have used go mod as dependency manager
     Filtering and Sorting so that less and relevant data is passed
 
     Proper Error handling and returning relevant error codes
+    
+    JWT to be used for Token
     
 # Scalabilty
     We can scale API in following ways
