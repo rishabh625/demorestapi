@@ -2,9 +2,9 @@ package tests
 
 import (
 	"bytes"
-	"encoding/json"
 	"demorestapi/internal/handlers"
 	"demorestapi/internal/object"
+	"encoding/json"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
@@ -14,10 +14,10 @@ import (
 //Test function for SignUp Handler
 func TestSignUpHandler(t *testing.T) {
 	var jsonStr = []byte(`{
-		"username":"rishabhadmin4",
+		"username":"admin4",
 		"password":"12345",
 		"admin_secret":"admin",
-		"email":"rishab25@gmail.com"
+		"email":"sampleemail@gmail.com"
 	}`)
 	req, err := http.NewRequest("POST", "/api/v1/signup", bytes.NewBuffer(jsonStr))
 	if err != nil {
@@ -44,7 +44,7 @@ func TestSignUpHandler(t *testing.T) {
 //Test function for Login Handler
 func TestLoginHandler(t *testing.T) {
 	var jsonStr = []byte(`{
-		"username":"rishabhadmin4",
+		"username":"admin4",
 		"password":"12345"
 	}`)
 	req, err := http.NewRequest("GET", "/api/v1/login", bytes.NewBuffer(jsonStr))
