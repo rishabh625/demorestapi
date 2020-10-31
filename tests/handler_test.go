@@ -3,8 +3,8 @@ package tests
 import (
 	"bytes"
 	"encoding/json"
-	"fyndtest/internal/handlers"
-	"fyndtest/internal/object"
+	"demorestapi/internal/handlers"
+	"demorestapi/internal/object"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"

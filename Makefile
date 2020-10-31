@@ -1,4 +1,4 @@
-APP		    := fyndtest
+APP		    := demorestapi
 GO_VARS ?=
 GO ?= go
 

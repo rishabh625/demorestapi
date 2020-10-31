@@ -4,7 +4,7 @@ import (
 	"crypto/md5"
 	"encoding/json"
 	"fmt"
-	"fyndtest/internal/object"
+	"demorestapi/internal/object"
 	"reflect"
 	"strconv"
 	"strings"

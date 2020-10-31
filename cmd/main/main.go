@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	. "fyndtest/internal/database"
-	"fyndtest/internal/handlers"
-	. "fyndtest/internal/middleware"
+	. "demorestapi/internal/database"
+	"demorestapi/internal/handlers"
+	. "demorestapi/internal/middleware"
 	"log"
 	"net/http"
 	"os"

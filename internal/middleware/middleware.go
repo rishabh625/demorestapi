@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"encoding/json"
-	"fyndtest/internal/handlers"
-	"fyndtest/internal/object"
+	"demorestapi/internal/handlers"
+	"demorestapi/internal/object"
 	"log"
 	"net/http"
 	"strings"

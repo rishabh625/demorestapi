@@ -1,4 +1,4 @@
-module fyndtest
+module demorestapi
 
 go 1.15
 
