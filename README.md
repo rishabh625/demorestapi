@@ -1,8 +1,5 @@
 # demorestapi
-Create a RESTful API for movies(something similar to IMDB) using Golang,Postgresql.
-
-# Info
-Have used go mod as dependency manager
+Demo RESTful API for movies(something similar to IMDB) using Golang,Postgresql.
 
 # Usage
     1. Clone this repo in your GOPATH 
@@ -28,7 +25,7 @@ Have used go mod as dependency manager
     Proper Error handling and returning relevant error codes
     
 # Scalabilty
-    We can scale API in following ways
+    Can scale API in following ways
 ### Using any Cloud Service Providers
     1.  Use Docker image and create instance group  
     2.  Create Managed Instance Group and Add Load Balancer 
